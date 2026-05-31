@@ -2,162 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "slate",
-  niche: "medspa",
-  name: "Lumière Med Spa",
-  tagline: "Where Science Meets Beauty.",
-  phone: "(555) 456-7890",
-  phoneHref: "tel:+15554567890",
-  email: "hello@lumieremedspa.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Mountain House", "Dublin", "Pleasanton"],
-  license: "CA MED #98765",
-  since: "2015",
-  google_rating: "5.0",
-  review_count: "234",
-  emergency: false,
-  social: {
-    google: "https://google.com",
-    yelp: "https://yelp.com",
-    facebook: "https://facebook.com",
+    name: "SERENE AESTHETICS & MEDSPA",
+    tagline: "Refined. Radiant. Renewed. Now.",
+    phone: "(727) 555-1234",
+    phoneHref: "tel:+17275551234",
+    email: "info@sereneaesthetics.com",
+    address: "123 Serene Way, St. Petersburg, FL 33701",
+    city: "St. Petersburg",
+    serviceAreas: ["St. Petersburg", "Clearwater", "Tampa", "Largo"],
+    license: "FL-MEDSPA-12345",
+    since: "2018",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "slate",
+    niche: "medspa",
   },
-},
 
   services: [
-  {
-    icon: "sparkles",
-    title: "Botox & Fillers",
-    desc: "Natural-looking wrinkle reduction and volume restoration. Board-certified injectors. Results you'll love.",
-    urgent: false,
-  },
-  {
-    icon: "zap",
-    title: "Laser Hair Removal",
-    desc: "Permanent hair reduction on all skin types. 6-session packages with dramatic, lasting results.",
-    urgent: false,
-  },
-  {
-    icon: "droplets",
-    title: "HydraFacial",
-    desc: "Deep cleanse, extract, and hydrate in 30 minutes. Instant glow. Zero downtime. A client favorite.",
-    urgent: false,
-  },
-  {
-    icon: "sun",
-    title: "Chemical Peels",
-    desc: "Resurface and renew with medical-grade peels. Treat acne, hyperpigmentation, and fine lines.",
-    urgent: false,
-  },
-  {
-    icon: "activity",
-    title: "Microneedling",
-    desc: "Stimulate collagen naturally. Treats scars, texture, and signs of aging. PRP add-on available.",
-    urgent: false,
-  },
-  {
-    icon: "star",
-    title: "Body Contouring",
-    desc: "Non-surgical fat reduction and skin tightening. Sculpt your silhouette without surgery or downtime.",
-    urgent: false,
-  },
-],
+    { icon: "sparkles", title: "Botox & Jeuveau", desc: "Smooth away fine lines and wrinkles for a refreshed, youthful appearance.", urgent: false },
+    { icon: "droplets", title: "Dermal Fillers", desc: "Restore volume, enhance contours, and achieve natural-looking rejuvenation.", urgent: false },
+    { icon: "scissors", title: "Kybella Treatments", desc: "Permanently reduce submental fat for a more defined jawline.", urgent: false },
+    { icon: "heart", title: "Signature Facials", desc: "Personalized treatments to cleanse, nourish, and revitalize your skin.", urgent: false },
+    { icon: "star", title: "Procell Microchanneling", desc: "Stimulate collagen production for improved skin texture and tone.", urgent: false },
+    { icon: "zap", title: "IV Infusion & Vitamins", desc: "Boost your energy, immunity, and overall wellness with custom blends.", urgent: false }
+  ],
 
   testimonials: [
-  {
-    name: "Amanda W.",
-    location: "Tracy, CA",
-    stars: 5,
-    text: "My Botox looks so natural — exactly what I wanted. The injector took so much time to understand my goals. I've been coming back every 4 months for 2 years.",
-  },
-  {
-    name: "Priya K.",
-    location: "Stockton, CA",
-    stars: 5,
-    text: "Laser hair removal changed my life. After 6 sessions, I'm basically hair-free. The staff made me feel comfortable the entire time.",
-  },
-  {
-    name: "Rachel D.",
-    location: "Dublin, CA",
-    stars: 5,
-    text: "Monthly HydraFacials have completely transformed my skin. I get compliments constantly. Worth every single penny.",
-  },
-],
+    { name: "Sarah L.", location: "St. Petersburg", stars: 5, text: "I had my first Botox treatment with Serene Aesthetics, and I am absolutely thrilled with the results! The specialist was incredibly knowledgeable and made me feel so comfortable. My forehead lines are gone, and I look so much more rested. Highly recommend their precise and gentle approach!" },
+    { name: "Mark T.", location: "Clearwater", stars: 5, text: "The dermal fillers I received here were a game-changer. I was nervous about looking 'done,' but the results are incredibly natural. My cheeks have a subtle lift, and I feel so much more confident. The staff is professional, and the spa itself is a tranquil oasis." },
+    { name: "Jessica R.", location: "Tampa", stars: 5, text: "Serene Aesthetics truly redefines the medspa experience. I've been coming for their signature facials for months, and my skin has never looked better. The attention to detail and personalized care are unmatched. It's my little slice of luxury and self-care." }
+  ],
 
   trustBadges: [
-  "Board-Certified Providers",
-  "FDA-Approved Treatments",
-  "Medical-Grade Products",
-  "Free Consultations",
-  "Financing Available",
-  "5-Star Rated on Google",
-],
+    "Licensed & Insured", "Certified Specialists", "5-Star Rated", "Personalized Care", "Luxurious Environment"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1170,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 11,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 500, label: "Happy Clients", suffix: "+", decimals: 0 },
+    { value: 5, label: "Years Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI concierge books treatments, answers service questions, and collects reviews via call, text, or WhatsApp. Available 24/7, never a wait."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "award", title: "Certified Specialists", desc: "Our team comprises highly trained and licensed professionals dedicated to your safety and results." },
+    { icon: "sparkles", title: "Minimalist Aesthetic", desc: "We combine expert precision with a refined, minimalist approach for natural-looking enhancements." },
+    { icon: "heart", title: "Personalized Care", desc: "Each treatment plan is tailored to your unique needs and aesthetic goals for optimal outcomes." },
+    { icon: "home", title: "Tranquil Environment", desc: "Our spa is designed for total stillness, offering a serene escape for your self-care journey." },
+    { icon: "shield-check", title: "Premium Products", desc: "We use only the highest quality, medical-grade products for superior and lasting results." },
+    { icon: "thumbs-up", title: "Client Satisfaction", desc: "Your happiness and confidence are our top priorities, ensuring a truly rewarding experience." }
+  ],
 
-  formServiceOptions: [
-  "Botox & Fillers",
-  "Laser Hair Removal",
-  "HydraFacial",
-  "Chemical Peels",
-  "Microneedling",
-  "Body Contouring"
-],
+  formServiceOptions: ["Botox", "Fillers", "Kybella", "Facials", "Jeuveau", "Waxing", "DMK", "Eyebrows & Lashes", "Teeth Whitening", "Chiropractic", "Radiant Glow-Tox", "Semaglutide", "Procell Microchanneling", "IV Infusion and Vitamin Injectables", "Sofwave"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
